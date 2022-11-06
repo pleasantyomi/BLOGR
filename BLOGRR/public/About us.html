@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogr</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="onclick.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-gradient-to-r from-primary-200 to-primary-100 h-fit rounded-bl-4xl text-white">
+    <div class="flex justify-between relative pt-10">
+        <div class="pl-8 lg:flex lg:pl-20">
+            <a href="index.html"><img class="hover:cursor-pointer" alt="logo" src="img/logo.svg"></a>
+
+            <nav class="hidden lg:flex  pt-2 pl-28">
+                
+                <a class="mr-12" href="#">Product</a>
+
+                <a class="mr-12" href="#">Company</a>
+
+                <a class="mr-12" href="#">Connect</a>
+            </nav>
+        </div>
+
+        <div class="hidden lg:flex lg:pr-24 lg:ml-8">
+            <a class="pt-2" href="#">Login</a>
+            <a class="block ml-10 bg-secondary-100 text-primary-200 font-bold pt-2 px-5 rounded-3xl hover:bg-primary-200 hover:text-secondary-100
+            hover:transform ease-in duration-500 hover:cursor-pointer" href="login.html">Sign up</a>
+        </div>
+
+        <div class="items-end pr-8 lg:hidden">
+            <img class="pt-3" src="img/icon-hamburger.svg">
+        </div>
+    </div>
+
+
+    <!-- header texts -->
+    <div class="pt-24 px-1 lg:pt-32">
+        <div class= "text-center lg:text-center" > 
+           <h1 class="text-5xl lg:text-6xl pb-4">A modern publishing platform</h1>
+           <h2 class="text-xl lg:text-lg lg:pb-8">Grow your audience and build your online brand</h2>
+        </div>
+
+        <div class="px-4 pt-8 lg:pt-11 flex justify-center pb-32">
+           <a href="login.html" class="bg-secondary-100 text-primary-200 font-bold py-2 px-5 rounded-3xl
+           hover:transform ease-out duration-500 hover:text-secondary-100  hover:bg-primary-200 active:-scale-50">Start for free</a>
+           <a href="About us.html" class="bg-transparent border-secondary-100 font-bold py-2 px-5 rounded-3xl border ml-4
+           hover:transform ease-out duration-500 hover:bg-secondary-100 hover:text-primary-200 active:-scale-50">Learn more</a>
+        </div>
+    </div>
+</header>
+
+<!-- primay header -->
+    <main class="text-secondary-300 pt-10">
+        <div>
+            <h1 class="px-4 text-center text-3xl lg:text-5xl font-bold">About Blogr...</h1>
+        </div>
+ 
+        <!-- Desktop Accordion -->
+        <div class="hidden lg:py-10 lg:flex lg:justify-between">
+            <ul class="lg:pt-28 lg:pl-24">
+                <li>
+                    <button onclick="myFunction()" class="transform ease-in duration-100 origin-left my-2 ml-20 flex justify-between w-96 text-xl font-semibold bg-transparent pl-8 border border-secondary-300 items-center py-5">
+                        About us
+                        <i class="pr-8">+</i>
+                    </button>
+                    
+                    <p id="accordion_text" class="hidden w-96 ml-20">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+
+                <li>
+                    <button onclick="myFunction1()"  class="my-2 ml-20 flex justify-between w-96 text-xl font-semibold bg-transparent pl-8 border border-secondary-300 items-center py-5">
+                        Our Vision
+                        <i class="pr-8">+</i>                  
+                      </button>
+
+                      <p id="accordion_text1" class="hidden w-96 ml-20">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+
+                <li>
+                    <button onclick="myFunction2()"  class="my-2 ml-20 flex justify-between w-96 text-xl font-semibold bg-transparent pl-8 border border-secondary-300 items-center py-5">
+                        Our Mission
+                        <i class="pr-8">+</i>
+                     </button> 
+                     
+                     <p id="accordion_text2" class="hidden w-96 ml-20">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+
+                <li>
+                    <button onclick="myFunction3()"  class="my-2 ml-20 flex justify-between w-96 text-xl font-semibold bg-transparent pl-8 border border-secondary-300 items-center py-5">
+                        Meet the team
+                        <i class="pr-8">+</i>                    
+                    </button>
+
+                    <p id="accordion_text3" class="hidden w-96 ml-20">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+            </ul>
+
+            <div class="pr-32 pt-6">
+                <img class="" src="img/illustration-phones.svg">
+            </div>
+        </div>
+
+        <!-- Mobile Accordion -->
+        <div class="py-7 lg:hidden">
+            <div class="">
+                <img class="ml-auto mr-auto" src="img/illustration-phones.svg">
+            </div>
+
+            <ul class="">
+                <li>
+                    <button onclick="myFunction4()" class="flex justify-between w-10/12 mr-auto ml-auto pl-8 mb-4 font-semibold bg-transparent border border-secondary-300 items-center py-5">
+                        About us
+                        <i class="pr-8">+</i>
+                    </button>
+                    
+                    <p id="accordion_text4" class="hidden w-10/12 mr-auto ml-auto pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+
+                <li>
+                    <button onclick="myFunction5()"  class="flex justify-between pl-8 w-10/12 mb-4 mr-auto ml-auto font-semibold bg-transparent border border-secondary-300 items-center py-5">
+                        Our Vision
+                        <i class="pr-8">+</i>                  
+                      </button>
+
+                      <p id="accordion_text5" class="hidden w-10/12 mr-auto ml-auto pb-2 ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+
+                <li>
+                    <button onclick="myFunction6()"  class="flex justify-between w-10/12 pl-8 mb-4 mr-auto ml-auto font-semibold bg-transparent border border-secondary-300 items-center py-5">
+                        Our Mission
+                        <i class="pr-8">+</i>
+                     </button> 
+                     
+                     <p id="accordion_text6" class="hidden w-10/12 mr-auto ml-auto pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+
+                <li>
+                    <button onclick="myFunction7()"  class="flex justify-between w-10/12 pl-8 mb-4 mr-auto ml-auto  font-semibold bg-transparent border border-secondary-300 items-center py-5">
+                        Meet the team
+                        <i class="pr-8">+</i>                    
+                    </button>
+
+                    <p id="accordion_text7" class="hidden w-10/12 mr-auto ml-auto pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut fugit beatae dolorum odit, aperiam voluptatibus aspernatur repellendus modi qui quos facilis quibusdam adipisci dolore vitae deserunt itaque accusantium iste?
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="block text-center bg-secondary-400 text-secondary-100 py-20 rounded-tr-4xl lg:flex lg:justify-center">
+        <div>
+            <a href="index.html"><img class="pb-10 ml-auto mr-auto lg:pr-48" src="img/logo.svg"></a>
+        </div>
+
+        <div class="text-center py-3 lg:pr-48 lg:text-left">
+            <ul>
+                <li class="pb-4 lg:pb-6">
+                    <a class="font-bold" href="#">Product</a>
+                </li>
+
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+
+                <li>
+                    <a href="#">Marketplace</a>
+                </li>
+
+                <li>
+                     <a href="#">features</a>
+                </li>
+
+                <li>
+                    <a href="#">Interrogations</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-center py-3 lg:pr-48 lg:text-left">
+            <ul>
+                <li class="pb-4 lg:pb-6">
+                    <a class="font-bold" href="#">Company</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Team</a>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-center py-3 lg:pr-48 lg:text-left">
+            <ul>
+                <li class="pb-4 lg:pb-6">
+                     <a class="font-bold" href="#">Connect</a>
+                </li>
+
+                <li>
+                     <a href="#">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+
+                <li>
+                    <a href="#">Linkedin</a>
+                </li>
+            </ul>     
+        </div>
+    </footer>
+</body>
+</html>
