@@ -71,12 +71,12 @@ function myFunction7() {
     }
 }
 function myFunction8(){
-    var x=
-    document.getElementById('dropdown');
-    if(x.style.display === "none"){
-        x.style.display = "block";
+    var y =
+    document.getElementById('dropdown_menu');
+    if(y.style.display === "none"){
+        y.style.display = "block";
     }
     else{
-        x.style.display = "none;"
+        y.style.display = "none;"
     }
 }
